@@ -1,0 +1,14 @@
+alias open="xdg-open"
+alias update="sudo apt update && sudo apt upgrade"
+
+# Git alias
+alias gs='git status'
+alias gd='git diff'
+alias gl='git log'
+alias gc='git checkout'
+alias gp='git push'
+alias gpl='git pull'
+alias dotcommit="git add . && git commit -m '.'"
+
+# open lazygit
+alias lg="lazygit"
