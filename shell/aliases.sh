@@ -5,6 +5,8 @@ alias u="sudo apt update && sudo apt upgrade"
 alias o="xdg-open"
 alias ..="cd .."
 alias t="tmuxifier"
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 
 # go to path
 alias dot="cd $HOME/repos/dotfiles/shell"
