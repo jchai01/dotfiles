@@ -11,7 +11,7 @@ alias pbpaste='xsel --clipboard --output'
 # go to path
 alias dot="cd $HOME/repos/dotfiles/shell"
 alias vp="cd $HOME/.config/nvim" # vim path
-alias tmp="cd $HOME/.tmuxifier/layouts" # tmuxifier path
+alias tp="cd $HOME/.tmuxifier/layouts" # tmuxifier path
 
 # Git alias
 alias gs='git status'
