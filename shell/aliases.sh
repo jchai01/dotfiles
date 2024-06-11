@@ -5,11 +5,15 @@ alias u="sudo apt update && sudo apt upgrade"
 alias o="xdg-open"
 alias t="tmuxifier"
 alias b="nvim ~/.bashrc"
+alias l="eza -al --icons --group-directories-first"
+alias mkd="mkdir -pv"
 alias hist="history"
+alias bc="bc -lq"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias grep="grep -i" # grep always searching in case insensitive mode
 alias sys='sudo systemctl'
+alias lbin='/usr/local/bin/'
 
 # navigation
 alias ..="cd .."
