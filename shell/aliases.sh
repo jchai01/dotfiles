@@ -1,17 +1,18 @@
-alias r='source ~/.bashrc' # reload bash
 alias a="nvim ~/repos/dotfiles/shell/aliases.sh"
-alias v="nvim"
-alias u="sudo apt update && sudo apt upgrade"
-alias o="xdg-open"
-alias t="tmuxifier"
 alias b="nvim ~/.bashrc"
+alias g="grep -i" # grep always searching in case insensitive mode
 alias l="eza -al --icons --group-directories-first"
+alias o="xdg-open"
+alias r='source ~/.bashrc' # reload bash
+alias t="tmuxifier"
+alias v="nvim"
+alias bt="bluetoothctl"
+alias ll="ls -la"
 alias mkd="mkdir -pv"
 alias hist="history"
 alias bc="bc -lq"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
-alias grep="grep -i" # grep always searching in case insensitive mode
 alias sys='sudo systemctl'
 alias lbin='/usr/local/bin/'
 
@@ -22,7 +23,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias dot="cd ~/repos/dotfiles/shell"
+alias dot="cd ~/repos/dotfiles/shell" # dotfiles path
 alias vp="cd ~/.config/nvim" # vim path
 alias tp="cd ~/.tmuxifier/layouts" # tmuxifier path
 
@@ -39,3 +40,4 @@ alias lg="lazygit"
 
 # temp
 alias api="cd ~/repos/LandFutures-API/"
+alias ui="cd ~/repos/LandFutures-UI/"
