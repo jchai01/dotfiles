@@ -1,5 +1,6 @@
 alias a="nvim ~/repos/dotfiles/shell/aliases.sh"
 alias b="nvim ~/.bashrc"
+alias e="espanso edit"
 alias g="grep -i" # grep always searching in case insensitive mode
 alias l="eza -al --icons --group-directories-first"
 alias o="xdg-open"
@@ -14,7 +15,6 @@ alias bc="bc -lq"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias sys='sudo systemctl'
-alias lbin='/usr/local/bin/'
 
 # defaults to nvim, makes it easier to copy & paste commands directly from the web
 alias vi="nvim"
