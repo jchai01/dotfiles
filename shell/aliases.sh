@@ -16,6 +16,11 @@ alias pbpaste='xsel --clipboard --output'
 alias sys='sudo systemctl'
 alias lbin='/usr/local/bin/'
 
+# defaults to nvim, makes it easier to copy & paste commands directly from the web
+alias vi="nvim"
+alias vim="nvim"
+alias nano="nvim"
+
 # navigation
 alias cd..="cd .."
 alias ..="cd .."
