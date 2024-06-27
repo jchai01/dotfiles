@@ -17,6 +17,7 @@ alias sys='sudo systemctl'
 alias lbin='/usr/local/bin/'
 
 # navigation
+alias cd..="cd .."
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
