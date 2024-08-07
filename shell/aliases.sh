@@ -35,6 +35,7 @@ alias dt="cd ~/Desktop"
 alias dot="cd ~/repos/dotfiles/shell" # dotfiles path
 alias vp="cd ~/.config/nvim" # vim path
 alias tp="cd ~/.tmuxifier/layouts" # tmuxifier path
+alias rp="cd ~/repos" # repos path
 
 # git alias
 alias gs='git status'
