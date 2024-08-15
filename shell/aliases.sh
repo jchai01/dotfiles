@@ -31,11 +31,13 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias dot="cd ~/repos/dotfiles/shell" # dotfiles path
 alias vp="cd ~/.config/nvim" # vim path
 alias tp="cd ~/.tmuxifier/layouts" # tmuxifier path
 alias rp="cd ~/repos" # repos path
+alias op="cd ~/Documents/'Obsidian Vault'" # obsidian path
 
 # git alias
 alias gs='git status'
