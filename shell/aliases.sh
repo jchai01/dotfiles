@@ -54,3 +54,6 @@ alias lg="lazygit"
 alias api="cd ~/repos/LandFutures-API/"
 alias ui="cd ~/repos/LandFutures-UI/"
 alias resolve="cd /opt/resolve/Fusion/Scripts/Comp/"
+
+# functions
+mcd() { mkdir "$@" 2> >(sed s/mkdir/mcd/ 1>&2) && cd "$_"; } # mkdir and cd into it, use -p flag to create multiple nested folder
