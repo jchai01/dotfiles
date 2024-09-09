@@ -39,6 +39,7 @@ alias vp="cd ~/.config/nvim" # vim path
 alias tp="cd ~/.tmuxifier/layouts" # tmuxifier path
 alias rp="cd ~/repos" # repos path
 alias op="cd ~/Documents/'Obsidian Vault'" # obsidian path
+alias jc="cd ~/repos/jchai01/"
 
 # git alias
 alias gs='git status'
