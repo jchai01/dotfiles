@@ -1,25 +1,26 @@
 alias a="nvim ~/repos/dotfiles/shell/aliases.sh"
 alias b="nvim ~/.bashrc"
-alias e="espanso edit"
-alias g="grep -i" # grep always searching in case insensitive mode
-alias l="eza -al --icons --group-directories-first"
-alias o="xdg-open"
-alias r='source ~/.bashrc' # reload bash
-alias t="tmuxifier"
-alias v="nvim"
-alias f="ffmpeg "
-alias j="journalctl"
-alias y="yt-dlp"
-alias bt="bluetoothctl"
-alias ll="ls -la"
-alias ee="espanso edit"
-alias mkd="mkdir -pv"
-alias hist="history"
 alias bc="bc -lq"
+alias bt="bluetoothctl"
+alias c="chmod +x"
+alias diff='diff --color'
+alias e="espanso edit"
+alias f="ffmpeg "
+alias g="grep -i" # grep always searching in case insensitive mode
+alias h='eval $(history | fzf +s --tac --tiebreak=index | sed "s/ *[0-9]* *//")'
+alias j="journalctl"
+alias l="eza -al --icons --group-directories-first"
+alias ll="ls -la"
+alias mkd="mkdir -pv"
+alias o="xdg-open ."
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+alias r='source ~/.bashrc' # reload bash
 alias sys='sudo systemctl'
-alias diff='diff --color'
+alias t="tmuxifier"
+alias tm="tmux"
+alias v="nvim"
+alias y="yt-dlp"
 
 # defaults to nvim, makes it easier to copy & paste commands directly from the web
 alias vi="nvim"
@@ -61,3 +62,14 @@ alias resolve="cd /opt/resolve/Fusion/Scripts/Comp/"
 
 # functions
 mcd() { mkdir "$@" 2> >(sed s/mkdir/mcd/ 1>&2) && cd "$_"; } # mkdir and cd into it, use -p flag to create multiple nested folder
+
+# requires installation of fzf and fd-find
+function gob()
+{
+    branch_name="$(git branch | fzf-tmux | sed 's/^\(\s\)*\*//g' | sed 's/^ *//g')"
+    git switch $branch_name
+}
+
+function cdf() { cd "$(fd --type d --exclude node_modules | fzf)" }
+function cdF() { cd "$(fd --type d --no-ignore --exclude node_modules | fzf)"
+}
