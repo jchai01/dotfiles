@@ -70,6 +70,5 @@ function gob()
     git switch $branch_name
 }
 
-function cdf() { cd "$(fd --type d --exclude node_modules | fzf)" }
-function cdF() { cd "$(fd --type d --no-ignore --exclude node_modules | fzf)"
-}
+function cdf() { cd "$(fd --type d --exclude node_modules | fzf)"; }
+function cdF() { cd "$(fd --type d --no-ignore --exclude node_modules | fzf)"; }
