@@ -21,6 +21,7 @@ alias t="tmuxifier"
 alias tm="tmux"
 alias v="nvim"
 alias y="yt-dlp"
+alias sudo='sudo ' # ensure alias still works with sudo: https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
 
 # defaults to nvim, makes it easier to copy & paste commands directly from the web
 alias vi="nvim"
