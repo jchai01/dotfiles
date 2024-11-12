@@ -1,4 +1,6 @@
 alias i="sudo pacman -S"
+alias i2="yay -S --noconfirm --sudoloop"
 alias s="sudo pacman -Ss"
+alias s2="yay -Ss"
 alias u="sudo pacman -Syu"
 alias un="sudo pacman -Rsc"
