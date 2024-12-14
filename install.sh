@@ -52,3 +52,8 @@ fi
 if ask "Do you want to install .vimrc?"; then
     ln -s "$(realpath ".vimrc")" ~/.vimrc
 fi
+
+# alacritty conf
+if ask "Do you want to install .alacritty.toml?"; then
+    ln -s "$(realpath ".alacritty.toml")" ~/.alacritty.toml
+fi
