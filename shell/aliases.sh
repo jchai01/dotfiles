@@ -4,6 +4,7 @@ alias bc="bc -lq"
 alias bt="bluetoothctl"
 alias c="chmod +x"
 alias diff='diff --color'
+alias d='docker'
 alias e="espanso edit"
 alias f="ffmpeg "
 alias g="grep -i" # grep always searching in case insensitive mode
@@ -28,6 +29,13 @@ alias vi="nvim"
 alias vim="nvim"
 alias nano="nvim"
 
+# nginx
+alias n="cd /etc/nginx"
+alias nt="sudo nginx -t" # nginx test
+alias ns="sudo systemctl status nginx" # nginx status
+alias nr="sudo nginx -s reload" # nginx restart
+alias nc="sudoedit /etc/nginx/nginx.conf" # nginx conf
+
 # navigation
 alias cd..="cd .."
 alias ..="cd .."
@@ -42,7 +50,7 @@ alias bin="cd /usr/local/bin" # bin path
 alias vp="cd ~/.config/nvim" # vim path
 alias tp="cd ~/.tmuxifier/layouts" # tmuxifier path
 alias rp="cd ~/repos" # repos path
-alias op="cd ~/Documents/'Obsidian Vault'" # obsidian path
+alias op="cd ~/'Obsidian Vault'" # obsidian path
 alias jc="cd ~/repos/jchai01/"
 
 # git alias
